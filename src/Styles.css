@@ -1,0 +1,72 @@
+:root{
+  --bg:#f6f8fb;
+  --card:#ffffff;
+  --accent:#6c63ff;
+  --muted:#7b7f87;
+}
+*{box-sizing:border-box}
+body{
+  font-family: Inter, system-ui, Arial;
+  background: var(--bg);
+  margin:0;
+  padding:20px;
+  color:#222;
+}
+.app{
+  max-width:720px;
+  margin:20px auto;
+  background:transparent;
+}
+h1{
+  margin:0 0 6px;
+  font-size:28px;
+}
+.subtitle{margin:0 0 16px;color:var(--muted)}
+.habit-form{
+  display:flex;
+  gap:8px;
+  margin-bottom:12px;
+}
+.habit-form input{
+  flex:1;
+  padding:10px 12px;
+  border-radius:10px;
+  border:1px solid #e2e6ef;
+  outline:none;
+  font-size:14px;
+}
+.habit-form button{
+  padding:10px 14px;
+  border-radius:10px;
+  border:0;
+  background:var(--accent);
+  color:#fff;
+  cursor:pointer;
+}
+.habit-list{margin-top:8px}
+.habit-item{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  background:var(--card);
+  padding:12px;
+  border-radius:12px;
+  margin:8px 0;
+  box-shadow: 0 6px 18px rgba(94,100,140,0.06);
+}
+.left{display:flex;align-items:center;gap:12px}
+.mark{
+  width:44px;height:44px;border-radius:10px;border:1px solid #e4e6ef;background:#fff;font-size:16px;cursor:pointer;
+}
+.mark.done{background:linear-gradient(90deg,var(--accent),#9b8bff);color:#fff;border:0}
+.meta .name{font-weight:600}
+.meta .small{font-size:12px;color:var(--muted)}
+.badge{
+  padding:6px 10px;border-radius:10px;font-size:13px;border:1px solid transparent;
+}
+.badge.gold{background:linear-gradient(90deg,#ffd47a,#ffc85a);color:#4a2b00}
+.badge.silver{background:#e9eefb;color:#123; border: 1px solid #d1d9f9}
+.badge.bronze{background:#f5e1d9;color:#4a2b00}
+.badge.muted{color:var(--muted);opacity:0.9}
+.empty{padding:18px;background:var(--card);border-radius:12px;text-align:center;color:var(--muted)}
+.foot{margin-top:16px;color:var(--muted);font-size:13px;text-align:center}
